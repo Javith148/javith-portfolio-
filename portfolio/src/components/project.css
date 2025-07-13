@@ -1,0 +1,138 @@
+#back {
+    height: 700px;
+}
+
+.back2 {
+    width: 100%;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    right: 0%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow-x: hidden;
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    right: 0%;
+    z-index: -1000;
+}
+
+.pro-head {
+    color: white;
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    z-index: 2;
+    position: relative;
+    top: 7%;
+
+
+}
+
+.pro-head span {
+    padding-left: 20px;
+    font-size: 50px;
+    font-weight: 800;
+    background: linear-gradient(270deg, rgb(217, 26, 26), rgb(227, 64, 216), rgb(211, 44, 44), rgb(227, 64, 216));
+    background-Size: 400% 400%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#lanBtn {
+    display: flex;
+    width: 500px;
+
+
+
+}
+
+/* Animate card from left */
+@keyframes slideInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-60px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Animate title/description from top */
+@keyframes slideFadeDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Animate badges from bottom */
+@keyframes slideUpFade {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Base animation styles */
+.project-card {
+    animation: slideInLeft 1s ease-out forwards;
+    opacity: 0;
+}
+
+.project-title,
+.project-description {
+    animation: slideFadeDown 1s ease-out forwards;
+    opacity: 0;
+}
+
+.project-title {
+    animation-delay: 0.5s;
+}
+
+.project-description {
+    animation-delay: 0.8s;
+}
+
+.tech-badge {
+    animation: slideUpFade 1s ease-out forwards;
+    opacity: 0;
+}
+
+/* Stagger the badges */
+.fade-delay-1 {
+    animation-delay: 1.1s;
+}
+
+.fade-delay-2 {
+    animation-delay: 1.3s;
+}
+
+.fade-delay-3 {
+    animation-delay: 1.5s;
+}
+
+#more-btn-pro {
+    color: white;
+    z-index: 5;
+    font-weight: 200;
+    font-size: 16px;
+    position: absolute;
+    left: 43%;
+    top: 370%;
+}

@@ -1,0 +1,107 @@
+.certificate-container {
+    width: 100%;
+    height: 1000px;
+    background-color: #0D0C0C;
+    position: absolute;
+    top: 0%;
+    right: 0%;
+    left: 0%;
+}
+
+#cetText {
+    color: white;
+    font-size: 16px;
+    font-weight: 200;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 3%;
+
+}
+
+.certificate-container h1 {
+    word-Wrap: 'break-word';
+    text-shadow: 2px 2px 9px rgba(206, 199, 199, 0.25);
+    font-size: 50px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 1%;
+}
+
+.course {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 90px;
+    width: 100%;
+    max-width: 1100px;
+    padding: 10px;
+    flex-basis: 25%;
+}
+
+#eff {
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 14px;
+    z-index: 1;
+}
+
+#eff:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
+}
+
+#eff::before {
+    content: '';
+    position: absolute;
+    top: -100%;
+    left: -100%;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(120deg,
+            rgba(255, 255, 255, 0) 40%,
+            rgba(255, 255, 255, 0.3) 50%,
+            rgba(255, 255, 255, 0) 60%);
+    transform: rotate(25deg);
+    animation: sweep 1.2s ease-in-out infinite;
+    opacity: 0;
+    pointer-events: none;
+}
+
+#eff:hover::before {
+    opacity: 1;
+}
+
+@keyframes sweep {
+    0% {
+        transform: translateX(-100%) rotate(25deg);
+    }
+
+    100% {
+        transform: translateX(100%) rotate(25deg);
+    }
+}
+
+#more-btn-crt {
+    color: white;
+    z-index: 5;
+    font-weight: 200;
+    font-size: 16px;
+    position: absolute;
+    left: 43%;
+    top: 110%;
+}
+
+#crt-foot {
+
+    position: relative;
+    top: 65%;
+}

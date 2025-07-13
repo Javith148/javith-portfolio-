@@ -1,0 +1,118 @@
+#back-about {
+  background-image: url(assets/backAbt.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  height: 100vh;
+  width: 100%;
+  z-index: 0;
+
+}
+
+#back-lay {
+  background: linear-gradient(0deg, black 10%, rgba(0, 0, 0, 0) 100%);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-Index: 1,
+}
+
+#abt-cot {
+  position: absolute;
+  top: 10%;
+  left: 2%;
+  width: 1300px;
+  height: 400px;
+}
+
+#more-abt-me {
+  background-color: black;
+  width: 100%;
+  height: 2600px;
+  color: antiquewhite;
+  position: absolute;
+  top: 100%;
+}
+
+#more-abt-me h6 {
+  color: white;
+  font-weight: 200;
+  font-size: 16px;
+  position: relative;
+  top: 10%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+#more-abt-me div {
+  position: relative;
+  top: 9%;
+  text-shadow: 2px 2px 9px rgba(206, 199, 199, 0.25);
+}
+
+#sub-beyond {
+  color: white;
+  font-weight: 200;
+  font-size: 20px;
+  position: relative;
+  top: 25%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+
+
+}
+
+#sub-beyond span {
+  color: aqua;
+}
+
+#scroll {
+  position: relative;
+  top: 200%;
+  display: flex;
+  align-items: flex-start;
+
+}
+
+#scroll img {
+  position: sticky;
+  top: 150px;
+  left: 15%;
+  z-index: 2;
+  transition: transform 0.3s ease;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+
+#scroll div {
+  position: relative;
+  left: 11.5%;
+  width: 13px;
+  height: 1000px;
+  background: #1E1E1E;
+  border-radius: 50px;
+  transition: background 0.3s ease;
+}
+
+/* Active effect when div overlaps image */
+.active-scroll-bar {
+  background: linear-gradient(to bottom, #ff416c, #ff4b2b);
+}
+
+#scroll-txt {
+  position: relative;
+  width: 500px;
+  left: 40%;
+  margin-top: 15%;
+  display: flex;
+  flex-direction: column;
+
+}

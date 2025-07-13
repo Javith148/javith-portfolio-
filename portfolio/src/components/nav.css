@@ -1,0 +1,299 @@
+* {
+  font-family: outfit;
+}
+
+
+
+.background {
+  width: 100%;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  right: 0%;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow-x: hidden;
+  z-index: 900;
+}
+
+#headtxt {
+  width: 890px;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-family: 'Outfit', sans-serif;
+  color: white;
+  font-size: 55px;
+  font-weight: 600;
+  line-height: 1;
+  word-wrap: break-word;
+  line-height: 70px;
+}
+
+#styletxt {
+  font-family: Norican;
+  font-weight: 200;
+  background: linear-gradient(to bottom, #0A0A0A, #b5b3b3);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#subtxt {
+
+  height: 90px;
+  color: gray;
+  font-size: 24px;
+  width: 890px;
+  position: absolute;
+  top: 55%;
+  left: 60%;
+  transform: translate(-50%, -50%);
+
+}
+
+#subimg {
+  width: 70px;
+  height: 43px;
+  border-radius: 20px;
+  position: absolute;
+  top: 20%;
+  margin-left: 5px;
+  margin-right: 10px;
+
+}
+
+#connect-btn {
+  width: 160px;
+  height: 50px;
+  background: rgba(210.87, 192.62, 192.62, 0.35);
+  border-radius: 34.34px;
+  backdrop-filter: blur(20px);
+  position: absolute;
+  top: 70%;
+  left: 43%;
+  transform: translate(-50%, -50%);
+  border: none;
+  color: white;
+  font-size: 15px;
+  font-weight: 300;
+  text-align: left;
+  overflow: hidden;
+  padding-left: 16px;
+  gap: 10px;
+  z-index: 1;
+  cursor: pointer;
+  transition: color 0.4s ease;
+}
+
+#connect-btn::before {
+  content: '';
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background: white;
+  border-radius: 50%;
+  top: 50%;
+  left: 80%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: transform 0.5s ease;
+  z-index: 0;
+}
+
+#connect-btn:hover::before {
+  transform: translate(-50%, -50%) scale(15);
+}
+
+#connect-btn:hover {
+  color: black;
+}
+
+#connect-btn span {
+  z-index: 2;
+  position: relative;
+}
+
+.circle-icon {
+  z-index: 2;
+  position: relative;
+}
+
+.circle-icon img {
+  width: 20px;
+  height: 20px;
+}
+
+
+#connect-btn div {
+  width: 38px;
+  height: 38px;
+  background: white;
+  border-radius: 9999px;
+  position: absolute;
+  right: 7%;
+  top: 12%;
+
+}
+
+#connect-btn span {
+  position: absolute;
+  left: 9%;
+  top: 30%;
+}
+
+#connect-btn div img {
+  position: absolute;
+  top: 20%;
+  left: 15%;
+}
+
+#res-btn {
+  background-color: transparent;
+  border: none;
+  color: gray;
+  font-size: 30px;
+  position: absolute;
+  top: 70.5%;
+  left: 55%;
+  transform: translate(-50%, -50%);
+}
+
+#res-btn img {
+  width: 35px;
+}
+
+#res-btn span {
+  position: absolute;
+  top: 0%;
+}
+
+#resume {
+  display: none;
+}
+
+#about-me {
+  background: linear-gradient(to top, #0D0C0C, #060511);
+  position: absolute;
+  top: 100%;
+  left: 0%;
+  height: 150%;
+  width: 100%;
+
+
+}
+
+#about-sub {
+  color: white;
+  position: absolute;
+  top: 31%;
+  left: 5%;
+  z-index: 5;
+  font-weight: 200;
+  font-size: 16px;
+}
+
+#abt-head {
+  color: white;
+  font-size: 50px;
+  z-index: 10;
+  position: absolute;
+  left: 5%;
+  top: 33%;
+
+}
+
+#txt-grad {
+  font-size: 50px;
+  font-family: Norican;
+  font-Weight: bold;
+  background: linear-gradient(270deg, rgb(217, 26, 26), rgb(227, 64, 216), rgb(211, 44, 44), rgb(227, 64, 216));
+  background-Size: 400% 400%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradientMove 5s ease infinite;
+  position: absolute;
+  left: 103%;
+  top: -50%;
+
+}
+
+@keyframes gradientMove {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+#abt-sub {
+  color: white;
+  width: 550px;
+  text-align: justify;
+  font-size: 20px;
+  position: absolute;
+  left: 5%;
+  top: 42%;
+}
+
+#more-btn {
+  color: white;
+  z-index: 5;
+  font-weight: 200;
+  font-size: 16px;
+  position: absolute;
+  left: 5%;
+  top: 85%;
+}
+
+#Skill-Cointainer {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 250%;
+  left: 0%;
+}
+
+#certificate {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 420%;
+  left: 0%;
+
+}
+
+
+#project-back {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  left: 0%;
+  top: 0%;
+  z-index: -100;
+  background-image: url(assets/back2.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#Project {
+  position: absolute;
+  top: 600%;
+  left: 0%;
+  width: 100%;
+}
+
+#footer {
+  position: absolute;
+  top: 1010%;
+  left: 0%;
+}

@@ -1,0 +1,127 @@
+#skills {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    right: 0%;
+    width: 100%;
+    height: 1200px;
+    background-color: #0D0C0C;
+    color: white;
+    font-family: sans-serif;
+    overflow: hidden;
+}
+
+#skills h6 {
+    color: white;
+    font-size: 16px;
+    font-weight: 200;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 5%;
+    left: 0%;
+}
+
+#skills h1 {
+    word-Wrap: 'break-word';
+    text-shadow: 2px 2px 9px rgba(206, 199, 199, 0.25);
+    font-size: 50px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 1%;
+
+
+}
+
+#skills h1 span {
+    word-wrap: break-word;
+    text-shadow: 2px 2px 9px rgba(206, 199, 199, 0.25);
+    font-size: 50px;
+    padding-left: 7px;
+    background: linear-gradient(to right, #B52020, #4851FF);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    display: inline-block;
+}
+
+
+.gradient-line {
+
+    position: absolute;
+    width: 250%;
+    height: 100px;
+
+    z-index: 1;
+}
+
+.gradient-line.one {
+    top: 0%;
+    left: -20%;
+    transform: rotate(-6.7deg);
+    background: linear-gradient(90deg, #ED2CE0, #B52020);
+    z-index: 11;
+}
+
+.gradient-line.two {
+    top: 150px;
+    left: -20%;
+    transform: rotate(5deg);
+    background: linear-gradient(90deg, #B52020, #ED2CE0);
+}
+
+.skillsSet {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 90px;
+    width: 100%;
+    max-width: 1100px;
+    padding: 10px;
+    flex-basis: 25%;
+}
+
+
+.skill-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.skill-card:hover {
+    transform: scale(1.08);
+    box-shadow: 0 4px 20px rgba(255, 255, 255, 0.2);
+    z-index: 10;
+}
+
+.skill-card:hover::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: 10.5px;
+    background: linear-gradient(45deg, #ED2CE0, #B52020, #4851FF);
+    z-index: -1;
+    filter: blur(8px);
+    opacity: 0.6;
+}
+
+.gradient-line.bottom.one {
+    top: 78%;
+    left: -20%;
+    transform: rotate(6.7deg);
+    background: linear-gradient(90deg, #B52020, #ED2CE0);
+}
+
+.gradient-line.bottom.two {
+    top: 65.5%;
+    left: -20%;
+    transform: rotate(-5deg);
+    background: linear-gradient(90deg, #ED2CE0, #B52020);
+}
